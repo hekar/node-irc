@@ -5,7 +5,7 @@
   "author": "Martyn Smith <martyn@dollyfish.net.nz>",
   "scripts": {
     "test": "./node_modules/faucet/bin/cmd.js test/test-*.js",
-    "lint": "./node_modules/jscs/bin/jscs --preset=airbnb */*.js"
+    "lint": "eslint ."
   },
   "contributors": [
     "Fionn Kelleher <me@fionn.co>",
@@ -27,11 +27,12 @@
   },
   "main": "lib/irc",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "license": "GPL-3.0",
   "dependencies": {
-    "irc-colors": "^1.1.0"
+    "irc-colors": "^1.1.0",
+    "lodash": "^4.11.1"
   },
   "optionalDependencies": {
     "iconv": "~2.1.6",
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "ansi-color": "0.2.1",
+    "eslint": "^2.8.0",
     "faucet": "0.0.1",
     "jscs": "1.9.0",
     "tape": "^3.0.3"
