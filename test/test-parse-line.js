@@ -1,4 +1,4 @@
-var parseMessage  = require('../lib/parse_message');
+var parseMessage = require('../lib/parse_message');
 var test = require('tape');
 
 var testHelpers = require('./helpers');
